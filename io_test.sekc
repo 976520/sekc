@@ -1,0 +1,5 @@
+define main()
+    print "Enter name:"
+    read input into name
+    print "Hello"
+    print name
