@@ -1,0 +1,2 @@
+#!/bin/bash
+java -Dsekc.lexer=./bin/lexer -Dsekc.parser=./bin/run_parser.sh -Dsekc.analyzer="python3 src/analyzer/main.py" -Dsekc.interpreter=./bin/runner -cp bin Main $1
