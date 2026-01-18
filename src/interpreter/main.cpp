@@ -30,9 +30,7 @@ int main(int argc, char *argv[]) {
 
   std::cout << "--- Sekc Interpreter ---" << std::endl;
   std::cout << "Linked with C Core (1+1=" << check << ")" << std::endl;
-  std::cout << "Received AST of size: " << json.length() << " bytes"
-            << std::endl;
-  std::cout << "Executing..." << std::endl;
+  std::cout << json.length() << " bytes" << std::endl;
   if (json.find("SetStmt") != std::string::npos) {
     // std::cout << "State changed via SetStmt" << std::endl;
   }
