@@ -1,5 +1,26 @@
 # 셐시lang
 
+---
+
+## How to run
+
+0. requirements
+
+    *   Java (JDK 8+)
+    *   Python 3
+    *   GCC/G++ (C++17 support)
+
+1.  `run.sh` 스크립트를 실행하여 파서와 인터프리터를 빌드합니다.
+    ```bash
+    ./run.sh
+    ```
+2.  생성된 `sekc` 스크립트로 `.sekc` 파일을 실행합니다.
+    ```bash
+    ./sekc <filename.sekc>
+    ```
+
+---
+
 ## 1. 변수
 
 **상태 변경 (Mutation)**

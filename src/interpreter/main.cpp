@@ -22,7 +22,7 @@ int main(int argc, char *argv[]) {
     }
   }
 
-  double check = sekc_add(1.0, 1.0);
+  double check = add(1.0, 1.0);
   if (check != 2.0) {
     std::cerr << "C Runtime Linkage Failed" << std::endl;
     return 1;
@@ -37,16 +37,16 @@ int main(int argc, char *argv[]) {
 
   if (json.find("PrintStmt") != std::string::npos) {
     if (json.find("Hello World") != std::string::npos) {
-      sekc_print_str("Hello World");
+      print_str("Hello World");
     } else {
-      sekc_print_str("Output from Sekc Code");
+      print_str("Output from Sekc Code");
     }
   }
 
   if (json.find("ReadStmt") != std::string::npos) {
     char buffer[256];
     std::cout << "Input required: ";
-    sekc_read_str(buffer, 256);
+    read_str(buffer, 256);
     std::cout << "Read value: " << buffer << std::endl;
   }
 

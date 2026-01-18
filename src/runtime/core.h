@@ -5,14 +5,14 @@
 extern "C" {
 #endif
 
-double sekc_add(double a, double b);
-double sekc_sub(double a, double b);
+double add(double a, double b);
+double sub(double a, double b);
 
-void sekc_print_str(const char *s);
-void sekc_print_num(double d);
-void sekc_read_str(char *buffer, int size);
+void print_str(const char *s);
+void print_num(double d);
+void read_str(char *buffer, int size);
 
-void sekc_log(const char *msg);
+void core_log(const char *msg);
 
 #ifdef __cplusplus
 }

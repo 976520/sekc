@@ -35,7 +35,7 @@ public class Main {
       pipe(pParser.getInputStream(), pAnalyzer.getOutputStream());
       pParser.waitFor();
 
-      File astFile = File.createTempFile("sekc_ast", ".json");
+      File astFile = File.createTempFile("ast", ".json");
       astFile.deleteOnExit();
 
       try (FileOutputStream fos = new FileOutputStream(astFile);
